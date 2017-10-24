@@ -29,3 +29,8 @@ data$GC.binned <- cut(data$percent.GC, 5)
 #Plot it
 ggplot(data) + geom_bar(aes(x=GC.binned))
 ```
+
+
+#Description of plot
+The bar plot shows the counts of the GC.binned of the 5 different bins with most of the counts in the [34.7,51.6] bin.
+
