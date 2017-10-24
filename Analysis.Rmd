@@ -1,0 +1,13 @@
+---
+title: "Variation SNPs Analysis"
+author: "Natalie Greenhalgh"
+output: html_document
+---
+
+
+# Load in data
+
+#View data
+
+#Plot data
+
