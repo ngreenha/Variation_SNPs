@@ -4,6 +4,11 @@ author: "Natalie Greenhalgh"
 output: html_document
 ---
 
+```{r load-packages}
+library("ggplot2")
+```
+
+
 
 # Load in data
 ```{r load-data}
@@ -17,4 +22,10 @@ head(data)
 ```{r plot-gc}
 # Rename GC column
 colnames(data)[12] <- "percent.GC"
+
+#Bin data into 5 bins
+data$GC.binned <- cut(data$percent.GC, 5)
+
+#Plot it
+ggplot(data) + geom_bar(aes(x=GC.binned))
 ```
